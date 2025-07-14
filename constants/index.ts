@@ -79,24 +79,27 @@ export const Skill_data = [
     },
 ];
 
+
 // SOCIAL <<
 export const Socials = [
     {
-      name: "Discord",
-      src: "/instagram.svg",
+      name: "inst",
+      src: "/projects/inst.png",
+      link: "https://www.instagram.com/bright_sunset_92/",
     },
     {
-      name: "Facebook",
-      src: "/facebook.svg",
+      name: "tg",
+      src: "/projects/tg.png",
+      link: "https://t.me/bright_sunset_92"
     },
     {
-      name: "Instagram",
-      src: "/discord.svg",
+      name: "linkedin",
+      src: "/projects/linkedin.png",
+      link: "https://www.linkedin.com/in/alexander-bezugliy",
     },
 ];
-  
-  
-  
+
+
 export const Frontend_skill = [
     {
       skill_name: "Html 5",
@@ -159,7 +162,8 @@ export const Frontend_skill = [
       height: 80,
     },
 ];
-  
+
+
 export const Backend_skill = [
     {
       skill_name: "Node js",
@@ -209,8 +213,9 @@ export const Backend_skill = [
       width: 80,
       height: 80,
     },
-  ];
-  
+];
+
+
 export const Full_stack = [
     {
       skill_name: "React Native",
@@ -238,13 +243,59 @@ export const Full_stack = [
       height: 50,
     },
 ];
-  
-  
+
+
 export const Other_skill = [
     {
       skill_name: "Go",
       Image: "/go.png",
       width: 60,
       height: 60,
+    },
+];
+
+
+export const productCards = [
+    {
+        id: 1,
+        src: "/projects/Holidays-store.png",
+        title: "Holidays Store Website",
+        description: ["/projects/technology/react.png", "/projects/technology/redux.png", "/projects/technology/tailwindcss.png", "/projects/technology/typescript.png", "/projects/technology/figma.png"],
+        link: "https://github.com/AlexanderBezugliy/Rabbit-store-app",
+    },
+    {
+        id: 2,
+        src: "/projects/Plants.png",
+        title: "Plants Store Website",
+        description: ["/next.png", "/projects/technology/redux.png", "/projects/technology/tailwindcss.png", "/projects/technology/motion.png", "/projects/technology/figma.png"],
+        link: "https://github.com/AlexanderBezugliy/Plants-app",
+    },
+    {
+        id: 3,
+        src: "/projects/Comics-store.jpg",
+        title: "Comics Store Website",
+        description: ["/projects/technology/react.png", "/projects/technology/redux.png", "/projects/technology/typescript.png", "/projects/technology/sass.png"],
+        link: "https://github.com/AlexanderBezugliy/COMICS-app",
+    },
+    {
+        id: 4,
+        src: "/projects/Marvel.png",
+        title: "Marvel App",
+        description: ["/projects/technology/react.png", "/projects/technology/redux.png", "/projects/technology/typescript.png", "/projects/technology/sass.png"],
+        link: "https://github.com/AlexanderBezugliy/MARVELv2_redux",
+    },
+    {
+        id: 5,
+        src: "/projects/Wind-project.png",
+        title: "Wind Project",
+        description: ["/projects/technology/react.png", "/projects/technology/typescript.png", "/projects/technology/tailwindcss.png", "/projects/technology/figma.png"],
+        link: "https://github.com/AlexanderBezugliy/Wind-Project",
+    },
+    {
+        id: 6,
+        src: "/projects/Fitnes.png",
+        title: "Fitnes Website",
+        description: ["/projects/technology/react.png", "/projects/technology/redux.png", "/projects/technology/typescript.png", "/projects/technology/tailwindcss.png", "/projects/technology/motion.png", "/projects/technology/figma.png"],
+        link: "https://github.com/AlexanderBezugliy/fitness-app",
     },
 ];

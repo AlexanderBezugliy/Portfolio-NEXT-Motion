@@ -8,9 +8,8 @@ import Image from "next/image";
 
 
 const Encryption = () => {
-
     return (
-        <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full">
+        <div className="hidden sm:flex flex-row relative items-center justify-center min-h-screen w-full h-full mb-[70px]">
             <div className="absolute w-auto h-auto top-0 z-[5]">
                 <motion.div
                     variants={slideInFromTop}
@@ -47,7 +46,7 @@ const Encryption = () => {
                     <h1 className="Welcome-text text-[12px]">Encryption</h1>
                 </div>
             </div>
-            <div className="absolute z-[20] bottom-[10px] px-[5px]">
+            <div className="absolute z-[20] bottom-[100px] sm:bottom-[40px] px-[5px]">
                 <div className="cursive text-[20px] font-medium text-center text-gray-300">
                     Secure your data with end-to-end encryption
                 </div>
