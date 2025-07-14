@@ -2,13 +2,16 @@
 
 import React, { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Points, PointMaterial, Preload } from "@react-three/drei";
+import { Points, PointMaterial } from "@react-three/drei";
 import { inSphere } from "maath/random";
+import * as THREE from 'three';
 
-const StarBackground = (props: any) => {
-    const ref: any = useRef();
+
+const StarBackground = () => {
+    const ref = useRef<THREE.Points>(null!);
+
     const [sphere] = useState(() =>
-        inSphere(new Float32Array(5000 * 3), { radius: 1.2 })
+        inSphere(new Float32Array(5000 * 3), { radius: 1.2 }) as Float32Array 
     );
 
     useFrame((state, delta) => {
@@ -23,7 +26,6 @@ const StarBackground = (props: any) => {
                 positions={sphere}
                 stride={3}
                 frustumCulled
-                {...props}
             >
                 <PointMaterial
                     transparent
