@@ -15,14 +15,15 @@ const ProjectCard = ({ src, title, description, link }: Props) => {
     return (
         <div
             className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] flex flex-col h-full"
-        >
-            <Image
-                src={src}
-                alt={title}
-                width={1000}
-                height={1000}
-                className="w-full object-cover h-56"
-            />
+        >   
+            <div className="relative w-full h-56"> 
+                <Image
+                    src={src}
+                    alt={title}
+                    fill
+                    className="object-cover" 
+                />
+            </div>
 
             <div className="relative p-4 flex-grow">
                 <h1 className="text-2xl text-center font-semibold text-white">{title}</h1>
