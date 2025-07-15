@@ -267,7 +267,7 @@ export const productCards = [
         id: 2,
         src: "/projects/Plants.png",
         title: "Plants Store Website",
-        description: ["/next.png", "/projects/technology/redux.png", "/projects/technology/tailwindcss.png", "/projects/technology/motion.png", "/projects/technology/figma.png"],
+        description: ["/projects/technology/next.js(logo).png", "/projects/technology/redux.png", "/projects/technology/tailwindcss.png", "/projects/technology/motion.png", "/projects/technology/figma.png"],
         link: "https://github.com/AlexanderBezugliy/Plants-app",
     },
     {
