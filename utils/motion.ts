@@ -46,3 +46,28 @@ export const slideInFromTop = {
         },
     },
 };
+
+export const containerCard = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.2, 
+        },
+    },
+};
+  
+export const card = {
+    hidden: { 
+        opacity: 0, 
+        y: 50 
+    },  
+
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.5,
+            ease: "easeOut",
+        },
+    },
+};

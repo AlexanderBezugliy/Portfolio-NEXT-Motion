@@ -299,3 +299,4 @@ export const productCards = [
         link: "https://github.com/AlexanderBezugliy/fitness-app",
     },
 ];
+

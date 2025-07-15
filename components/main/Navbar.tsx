@@ -104,10 +104,12 @@ const Navbar = () => {
 
                 {/* BURGER MOBILE */}
                 <div
-                    className="sm:hidden text-gray-200 text-3xl cursor-pointerz-50"
+                    className="sm:hidden text-gray-200 text-3xl cursor-pointer z-50"
                     onClick={toggleMenu}
                 >
-                    {isOpen ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
+                    {isOpen 
+                        ? <HiOutlineX className="text-blue-600 w-[40px] h-[40px]" /> 
+                        : <HiOutlineMenuAlt3 className="text-blue-600 w-[40px] h-[40px]" />}
                 </div>
             </div>
 
@@ -121,8 +123,11 @@ const Navbar = () => {
                         exit="hidden"
 
                         ref={menuRef}
-                        className="fixed top-[65px] left-0 w-full h-auto bg-[#030014] p-5 md:hidden 
-                                    flex flex-col items-center gap-5 border-b border-[#7042f861]"
+                        className="fixed top-[65px] left-0 w-full h-auto p-5 md:hidden 
+                                    flex flex-col items-center gap-5 border-b border-[#7042f861]
+                                    bg-gradient-to-b from-[#030014cc] to-[#0f0f2dcc] backdrop-blur-3xl"
+                        // className="fixed top-[65px] left-0 w-full h-auto bg-[#030014] p-5 md:hidden 
+                        //             flex flex-col items-center gap-5 border-b border-[#7042f861]"
                     >
                         <a
                             onClick={toggleMenu}
