@@ -73,6 +73,7 @@ const HeroContent = () => {
                         alt="logo"
                         width={40}
                         height={40}
+                        sizes="40px"
                         className="inline-block ml-2 cursor-pointer hover:animate-slowspin"
                     />
                 </motion.a>
@@ -81,7 +82,6 @@ const HeroContent = () => {
             {/* RIGHT SIDE */}
             <motion.div
                 variants={slideInFromRight(0.8)}
-                // className="w-full h-full flex justify-center items-center"
                 className="w-full h-full flex justify-center items-center mt-10 ml-10 md:ml-4 md:mt-0" 
             >
                 <Image
@@ -89,6 +89,8 @@ const HeroContent = () => {
                     alt="work icons"
                     height={650}
                     width={650}
+                    priority
+                    sizes="(max-width: 768px) 100vw, 50vw"
                 />
             </motion.div>
             

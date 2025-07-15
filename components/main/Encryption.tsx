@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import Image from "next/image";
 
-
-
 const Encryption = () => {
     return (
         <div className="hidden sm:flex flex-row relative items-center justify-center min-h-screen w-full h-full mb-[70px]">
@@ -26,20 +24,25 @@ const Encryption = () => {
 
             <div className="flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto">
                 <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
-                    <Image
-                        src="/LockTop.png"
-                        alt="Lock top"
-                        width={50}
-                        height={50}
-                        className="w-[50px] translate-y-5 transition-all duration-200 group-hover:translate-y-11"
-                    />
-                    <Image
-                        src="/LockMain.png"
-                        alt="Lock Main"
-                        width={70}
-                        height={70}
-                        className=" z-10"
-                    />
+                    <div className="relative w-[50px] h-[50px]">
+                        <Image
+                            src="/LockTop.png"
+                            alt="Lock top"
+                            fill
+                            sizes="50px"
+                            className="translate-y-5 transition-all duration-200 group-hover:translate-y-11 object-contain"
+                        />
+                    </div>
+
+                    <div className="relative w-[70px] h-[70px]">
+                        <Image
+                            src="/LockMain.png"
+                            alt="Lock Main"
+                            fill
+                            sizes="70px"
+                            className="object-contain"
+                        />
+                    </div>
                 </div>
 
                 <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
