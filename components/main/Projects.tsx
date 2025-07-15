@@ -4,7 +4,7 @@ import React from "react";
 import ProjectCard from "../sub/ProjectCard";
 import { productCards } from "@/constants";
 import { motion } from "framer-motion";
-import { card, containerCard } from "@/utils/motion";
+import { containerCard } from "@/utils/motion";
 
 const Projects = () => {
     return (
@@ -24,9 +24,19 @@ const Projects = () => {
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10 w-full max-w-7xl z-[30]"
             >
                 {productCards.map((product) => (
-                    <motion.div 
+                    <motion.div
                         key={product.id}
-                        variants={card}
+                        variants={{
+                            hidden: { opacity: 0, y: 50},
+                            visible: {
+                                opacity: 1,
+                                y: 0,
+                                transition: {
+                                    duration: 0.5,
+                                    ease: "easeOut",
+                                },
+                            },
+                        }}
                     >
                         <ProjectCard
                             key={product.id}
